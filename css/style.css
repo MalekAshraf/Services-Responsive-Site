@@ -1,0 +1,493 @@
+* {
+  box-sizing: border-box;
+}
+html {
+  transition: all 1s;
+  scroll-behavior: smooth;
+}
+body {
+  background-color: #f5f5f5;
+}
+section {
+  margin-top: 100px;
+}
+/* Dropdown Menu */
+.dropdown-menu {
+  border: 1px solid rgba(232, 232, 248, 0.863);
+  border-radius: 5px;
+  box-shadow: 5px 5px 10px rgba(86, 85, 133, 0.767);
+}
+.dropdown-menu li .dropdown-item:hover {
+  color: #0078ff;
+}
+@media (max-width: 576px) {
+  .dropdown-item::before {
+    transform: rotate(-90deg);
+  }
+}
+
+/* Navbar effect */
+.navbar .container .navbar-brand {
+  color: rgb(255, 255, 255);
+  font-family: " system-ui, -apple-system";
+  font-weight: 600;
+  font-size: 28px;
+}
+.navbar .container .nav-item .nav-link {
+  color: rgb(255, 255, 255);
+  font-family: " system-ui, -apple-system";
+  font-weight: 600;
+  font-size: 16px;
+}
+.navbar .nav-item {
+  position: relative;
+  margin-right: 10px;
+}
+
+.navbar .nav-item::after {
+  content: "";
+  width: 0%;
+  height: 3px;
+  background-color: rgb(255, 255, 255);
+  position: absolute;
+  left: 10px;
+  bottom: 0;
+  transition: all 1s;
+}
+/* home undeline-text */
+.navbar .nav-item .underline-text::after {
+  content: "";
+  width: 70%;
+  height: 3px;
+  background-color: rgb(255, 255, 255);
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  transition: all 1s;
+}
+.navbar .nav-item:hover::after {
+  width: 70%;
+}
+/* Header Style */
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("../images/hero-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+header .header-caption h1 {
+  color: rgb(255, 255, 255);
+  font-family: " system-ui, -apple-system";
+  font-weight: 600;
+  font-size: 72px;
+}
+header .header-caption span {
+  color: rgb(255, 255, 255);
+  font-family: " system-ui, -apple-system";
+  font-weight: 600;
+  font-size: 40px;
+}
+.hero-subtitle {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.typed-cursor {
+  font-weight: bold;
+  margin-left: 2px;
+}
+/* Section_1 About */
+
+#aboutSec h2 {
+  position: relative;
+  margin-bottom: 20px;
+  color: rgb(30, 30, 30);
+  font-family: " system-ui, -apple-system";
+  font-weight: 500;
+  font-size: 32px;
+}
+
+/* ul name,profile,email,phone */
+#aboutSec .ul_margleft {
+  margin-left: 15px;
+}
+#aboutSec .ul_margleft li {
+  color: rgb(78, 78, 78);
+  font-family: " system-ui, -apple-system";
+  font-weight: 400;
+  font-size: 18px;
+}
+#aboutSec .ul_margleft li span {
+  color: rgb(30, 30, 30);
+  font-family: " system-ui, -apple-system";
+  font-weight: 600;
+}
+
+/* Skills */
+#aboutSec h3 {
+  color: rgb(30, 30, 30);
+  font-family: " system-ui, -apple-system";
+  font-weight: 600;
+  font-size: 18px;
+}
+.progress_comment {
+  color: rgb(78, 78, 78);
+  font-family: " system-ui, -apple-system";
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.about_line_after::after {
+  content: "";
+  width: 20%;
+  height: 3px;
+  background-color: #0078ff;
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+}
+
+#aboutSec .p_style {
+  color: rgb(78, 78, 78);
+  font-size: 20px;
+  /* font-family: " system-ui, -apple-system";
+  font-weight: 300; */
+}
+.progress {
+  height: 12px;
+  border-radius: 0%;
+  background-color: #cde1f8;
+}
+.progress-bar {
+  transition: all 3s ease-in-out;
+}
+/*  //////////////   all common  Style      ////////////////    */
+
+/* Section_2 Services */
+#servSec .services h2,
+#sProtfolio .protfolio h2,
+#sBlog .blog h2 {
+  color: rgb(30, 30, 30);
+  font-family: " system-ui, -apple-system";
+  font-weight: 700;
+  font-size: 48px;
+}
+#servSec .services p,
+#sProtfolio .protfolio p,
+#sBlog .blog p {
+  color: rgb(78, 78, 78);
+  font-family: " system-ui, -apple-system";
+  font-weight: 400;
+  font-size: 16px;
+}
+/*              all After in website                       */
+#servSec .services,
+#sProtfolio .protfolio,
+#sBlog .blog,
+#sContact .contact {
+  position: relative;
+  margin-bottom: 50px;
+}
+#servSec .services::after,
+#sProtfolio .protfolio::after,
+#sBlog .blog::after,
+#sContact .contact::after {
+  content: "";
+  width: 50px;
+  height: 5px;
+  background-color: #0078ff;
+  position: absolute;
+  left: 48%;
+  bottom: -15px;
+}
+/* ///////////////////////////////////////////////////// */
+
+#servSec .servItem .icon {
+  width: 100px;
+  height: 100px;
+  font-size: 35px;
+  border: 8px solid #0078ff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  transition: all 1s;
+}
+#servSec .servItem:hover .icon {
+  background-color: #0078ff;
+  color: #fff;
+  border: 8px solid #cde1f8;
+}
+/* SEection 3 Protfolio */
+/* Fixed Background Image */
+main .fixed-img {
+  width: 100%;
+  background-image: url("../images/counters-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+main .servNumper {
+  margin: 0%;
+  padding: 8%;
+  background-color: #3c85d8bb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* servNumper compelet */
+.servNumper .servNumperItem .numIcon {
+  width: 80px;
+  height: 80px;
+  font-size: 30px;
+  color: #ffffff;
+  border: 10px solid#CDE1F8;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+.servNumper .servNumperItem p {
+  color: rgb(255, 255, 255);
+  font-family: " system-ui, -apple-system";
+  font-weight: 400;
+  font-size: 32px;
+}
+.servNumper .servNumperItem h4 {
+  color: rgb(255, 255, 255);
+  font-family: " system-ui, -apple-system";
+  font-weight: 400;
+  font-size: 16px;
+}
+/* Slider */
+main .slider {
+  margin: 0%;
+  height: 100%;
+  background-color: #3c85d8bb;
+}
+main .slider .round-btn {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+}
+main .slider .slider_text {
+  background-color: transparent;
+  margin-top: 5%;
+  margin-bottom: -5%;
+}
+main .slider .slider_btn {
+  margin-bottom: -4%;
+}
+/*   Section 4 Protfolio  */
+#sProtfolio {
+  background-color: #f5f5f5;
+  padding-top: 80px;
+}
+#sProtfolio .protfolioItems .proItemText h2 {
+  color: rgb(30, 30, 30);
+  font-family: " system-ui, -apple-system";
+  font-weight: 500;
+  font-size: 19px;
+}
+#sProtfolio .protfolioItems .proItemText span {
+  color: rgb(78, 78, 78);
+  font-family: " system-ui, -apple-system";
+  font-weight: 400;
+  font-size: 13px;
+}
+#sProtfolio .protfolioItems .proItemText .text-span {
+  color: rgb(0, 120, 255);
+  margin-right: 2px;
+}
+#sProtfolio .protfolioItems .proItemText .icon {
+  color: rgb(0, 120, 255);
+  font-family: " system-ui, -apple-system";
+  border: 3px solid rgb(0, 120, 255);
+  width: 40px;
+  height: 40px;
+  font-size: 30px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#sProtfolio .protfolioItems .img-div {
+  overflow: hidden;
+  transition: all 1s;
+}
+#sProtfolio .protfolioItems:hover img {
+  transform: scale(1.5);
+  transition: all 1s;
+}
+#sProtfolio .protfolioItems .img-div img {
+  transition: all 1s;
+}
+/*   Section 5 slider  */
+
+main .fixed-img-Blog {
+  width: 100%;
+  background-image: url("../images/overlay-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+/*   Section 5.1 Blog  */
+
+#sBlog {
+  background-color: #f5f5f5;
+  padding: 80px 0px;
+}
+#sBlog .blogItems {
+  border: 1px solid rgb(204, 204, 204);
+  border-radius: 5px;
+}
+#sBlog .blogItems h3 a {
+  color: rgb(30, 30, 30);
+  font-family: " system-ui, -apple-system";
+  font-weight: 500;
+  font-size: 21px;
+  transition: all 1s;
+}
+#sBlog .blogItems p {
+  color: rgb(78, 78, 78);
+  font-family: " system-ui, -apple-system";
+  font-weight: 400;
+  font-size: 16px;
+}
+#sBlog .blogItems h3 a:hover {
+  color: rgb(0, 120, 255);
+  font-family: " system-ui, -apple-system";
+  font-weight: 500;
+  font-size: 21px;
+  transition: all 1s;
+}
+#sBlog .img-div {
+  position: relative;
+}
+
+#sBlog .blogItems .blogTextH span {
+  color: #ffffff;
+  background-color: #0078ff;
+  font-family: " system-ui, -apple-system";
+  text-align: center;
+  padding: 5px 15px;
+  border-radius: 5px;
+  position: absolute;
+  left: 35%;
+  bottom: -20px;
+}
+#sBlog .blogItems .blogNameTime {
+  border-top: 1px solid rgb(204, 204, 204);
+  background-color: #eeeaea;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  padding: 5px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#sBlog .blogItems .blogNameTime span {
+  color: rgb(78, 78, 78);
+  font-family: " system-ui, -apple-system";
+  font-weight: 400;
+  font-size: 16px;
+  transition: all 1s;
+}
+#sBlog .blogItems .blogNameTime:hover span {
+  color: rgb(0, 120, 255);
+  transition: all 1s;
+}
+#sBlog .blogItems .blogNameTime .clock span {
+  color: rgb(78, 78, 78);
+  font-family: " system-ui, -apple-system";
+  font-weight: 400;
+  font-size: 16px;
+  transition: all 1s;
+}
+
+/* /////////     Section 6 Contact     ///////// */
+main #sContact {
+  margin: 0%;
+  padding-top: 8%;
+  padding-bottom: 4%;
+  background-color: #3c85d8bb;
+}
+#sContact .contact h5 {
+  color: rgb(30, 30, 30);
+  font-family: " system-ui, -apple-system";
+  font-weight: 500;
+  font-size: 32px;
+}
+#sContact .contact {
+  position: relative;
+  margin-bottom: 50px;
+}
+#sContact .contact::after {
+  content: "";
+  width: 90px;
+  height: 3px;
+  background-color: #0078ff;
+  position: absolute;
+  left: 0%;
+  bottom: -15px;
+}
+#sContact .div-btn:hover .btnsend {
+  background-color: #0078ff;
+  color: #fff;
+  box-sizing: border-box;
+  box-shadow: 5px 10px 20px #80a6d1 inset;
+  transition: all 10ms;
+}
+#sContact .ulIcon_style span {
+  color: #8cd6ff;
+  margin-right: 10px;
+}
+#sContact .ulIcon_style span li {
+  color: #8cd6ff;
+  border: 1px solid #0078ff;
+  margin-right: 10px;
+}
+#sContact .ul_socilalink li {
+  margin-left: 10px;
+}
+#sContact .ul_socilalink li span {
+  color: #1e1e1e;
+  border: 5px solid #0078ff;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  padding-top: 5px;
+  margin: auto;
+  transition: all 1s;
+}
+#sContact .ul_socilalink li span i {
+  color: #1e1e1e;
+  font-weight: 400;
+  font-size: 30px;
+}
+#sContact .ul_socilalink li:hover span {
+  background-color: #0078ff;
+  color: #fff;
+  border: 5px solid #cde1f8;
+  transition: all 1s;
+}
+#sContact .ul_socilalink li span:hover i {
+  color: #fff;
+  transition: all 1s;
+}
+/*            FOOter                      */
+footer {
+  text-align: center;
+  color: #fff;
+  padding: 25px 0;
+  background: #0062d3;
+}
